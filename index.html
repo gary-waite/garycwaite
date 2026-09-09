@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terminus</title>
+<meta name="description" content="Terminus ahead.">
+<link rel="canonical" href="https://garycwaite.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garycwaite.com/">
+<meta property="og:title" content="Terminus ahead.">
+<meta property="og:description" content="All lines terminate here.">
+<meta property="og:image" content="https://garycwaite.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terminus ahead.">
+<meta name="twitter:description" content="All lines terminate here.">
+<meta name="twitter:image" content="https://garycwaite.com/og.svg">
+<meta name="theme-color" content="#0b1a33">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://garycwaite.com/",
+  "name": "Terminus",
+  "author": { "@type": "Person", "name": "Gary C. Waite" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,800;1,9..144,300&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1a33;
+  --paper:#f2f4f8;
+  --paper-dim:#a9b7d0;
+  --paper-faint:#4f6390;
+  --rule:#1e3563;
+  --red:#d64545;
+  --signal:#7fb3ff;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--paper);font-family:var(--serif);-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(ellipse 80% 55% at 50% -10%,rgba(127,179,255,.14),transparent 60%);
+  display:flex;flex-direction:column;min-height:100vh}
+::selection{background:var(--red);color:var(--bg)}
+a{color:var(--paper-dim);text-decoration:none;border-bottom:1px solid var(--rule);transition:color .2s,border-color .2s}
+a:hover{color:var(--paper);border-color:var(--red)}
+
+main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:12vh 28px 10vh;max-width:880px;margin:0 auto;width:100%}
+.kicker{display:flex;align-items:center;gap:14px;margin-bottom:38px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-dim)}
+.lamp{width:9px;height:9px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);animation:lamp 2.6s ease-in-out infinite}
+@keyframes lamp{50%{opacity:.35;box-shadow:0 0 2px var(--signal)}}
+h1{font-size:clamp(52px,10vw,120px);font-weight:800;line-height:.95;letter-spacing:-.03em;font-variation-settings:"opsz" 144}
+h1 span{display:block;font-weight:300;font-style:italic;color:var(--red)}
+.line{margin-top:48px;max-width:40ch;font-size:19px;font-weight:300;line-height:1.6;color:var(--paper-dim)}
+.line em{font-style:italic;color:var(--paper)}
+
+.track{margin-top:72px;position:relative;height:34px}
+.track::before,.track::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule)}
+.track::before{top:10px}.track::after{top:24px}
+.track i{position:absolute;top:6px;width:1px;height:22px;background:var(--paper-faint);transform:skewX(-24deg)}
+
+footer{padding:26px 28px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;max-width:880px;margin:0 auto;width:100%}
+footer a{border:none;color:var(--paper-faint)}
+footer a:hover{color:var(--red)}
+
+.rv{opacity:0;transform:translateY(10px);animation:rv .9s ease forwards}
+.rv:nth-child(2){animation-delay:.15s}.rv:nth-child(3){animation-delay:.3s}.rv:nth-child(4){animation-delay:.45s}
+@keyframes rv{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;animation:none}.lamp{animation:none}}
+</style>
+</head>
+<body>
+
+<main>
+  <div class="kicker rv"><span class="lamp"></span>All lines terminate here</div>
+  <h1 class="rv">Terminus <span>ahead.</span></h1>
+  <p class="line rv">The track is laid. The board is dark. <em>Wait for the lamp.</em></p>
+  <div class="track rv" aria-hidden="true">
+    <i style="left:6%"></i><i style="left:19%"></i><i style="left:32%"></i><i style="left:45%"></i><i style="left:58%"></i><i style="left:71%"></i><i style="left:84%"></i><i style="left:97%"></i>
+  </div>
+</main>
+
+<footer>
+  <span>© <span id="yr"></span> G.C.W.</span>
+  <a href="mailto:gary@garycwaite.com">Signal</a>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

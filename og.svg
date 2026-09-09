@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="-10%" r="80%"><stop offset="0" stop-color="#7fb3ff" stop-opacity=".18"/><stop offset=".6" stop-color="#0b1a33" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1a33"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g stroke="#1e3563" stroke-width="2">
+    <line x1="0" y1="560" x2="1200" y2="560"/><line x1="0" y1="580" x2="1200" y2="580"/>
+  </g>
+  <g stroke="#2b4478" stroke-width="3">
+    <line x1="120" y1="548" x2="140" y2="592"/><line x1="320" y1="548" x2="340" y2="592"/><line x1="520" y1="548" x2="540" y2="592"/><line x1="720" y1="548" x2="740" y2="592"/><line x1="920" y1="548" x2="940" y2="592"/><line x1="1120" y1="548" x2="1140" y2="592"/>
+  </g>
+  <circle cx="96" cy="150" r="9" fill="#d64545"/>
+  <text x="120" y="156" font-family="IBM Plex Mono, Menlo, monospace" font-size="20" letter-spacing="3" fill="#a9b7d0">ALL LINES TERMINATE HERE · NORTH TEXAS</text>
+  <text x="90" y="330" font-family="Fraunces, Georgia, serif" font-size="150" font-weight="800" letter-spacing="-5" fill="#f2f4f8">Terminus</text>
+  <text x="90" y="450" font-family="Fraunces, Georgia, serif" font-size="150" font-weight="300" font-style="italic" letter-spacing="-4" fill="#d64545">ahead.</text>
+  <text x="90" y="520" font-family="IBM Plex Mono, Menlo, monospace" font-size="22" letter-spacing="2" fill="#a9b7d0">garycwaite.com</text>
+</svg>
