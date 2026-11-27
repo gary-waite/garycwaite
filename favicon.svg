@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0b1a33"/>
-  <path d="M16 18h32M24 18v28m16-28v28" fill="none" stroke="#f2f4f8" stroke-width="4" stroke-linecap="round"/>
+  <title>GCW</title>
+  <path d="M8 0h48l8 8v48l-8 8H8l-8-8V8z" fill="#0b1a33"/>
+  <g fill="#f2f4f8">
+    <!-- G -->
+    <path d="M9 17h9l2 2v5h-4v-3h-5v16h5v-6h-3v-4h7v12l-2 2H9l-2-2V19z"/>
+    <!-- C -->
+    <path d="M26 17h8l2 2v6h-4v-4h-5v16h5v-4h4v6l-2 2h-8l-3-2V19z"/>
+    <!-- W -->
+    <path d="M39 17h4l2 16 2-12h4l2 12 2-16h4l-4 24h-5l-1-10-2 10h-5z"/>
+  </g>
+  <path d="M26 48h12v4H26z" fill="#7fb3ff"/>
 </svg>
